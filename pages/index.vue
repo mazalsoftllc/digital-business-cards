@@ -73,7 +73,7 @@
         <div
           class="logo w-24"
           v-html="require(`~/assets/icons/logo.svg?include`)"
-          title="EnBizCard - An Open-Source Digital Business Card Generator"
+          title="Mazalsoft.xyz ¡Crea tu tarjeta de presentación digital!"
         ></div>
         <a
           class="
@@ -91,10 +91,10 @@
             transition-colors
             duration-200
           "
-          href="https://www.vishnuraghav.com/donate"
+          href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P"
           target="_blank"
           rel="noreferrer"
-          >Donate</a
+          >Videotutorial en español</a
         >
       </div>
       <h1
@@ -106,17 +106,16 @@
           md:mt-48 md:leading-tight
         "
       >
-        Why Pay When Your Website Can Host Your Digital Business Cards for Free!
+      ¡Crea tu tarjeta de presentación digital en minutos y descárgala gratis!
       </h1>
       <p class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
-        EnBizCard helps you create beautiful, responsive HTML&#8209;based
-        digital business cards that can be hosted on your website.
+        Transforma tu presentación profesional con hermosas tarjetas digitales:
       </p>
       <ul class="mt-4 text-gray-400">
-        <li>-&ensp;No sign-up required</li>
-        <li>-&ensp;100% free and open-source</li>
-        <li>-&ensp;No user tracking and data collection</li>
-        <li>-&ensp;Works offline</li>
+        <li>-&ensp;No es necesario iniciar sesión.</li>
+        <li>-&ensp;100% adaptables para cualquier pantalla.</li>
+        <li>-&ensp;Descarga el archivo gratis.</li>
+        <li>-&ensp;Conviértela en una App Móvil por USD $30</li>
       </ul>
       <div class="mt-4 flex flex-wrap items-center">
         <button
@@ -141,7 +140,7 @@
           "
           @click="create()"
         >
-          Create your own
+        ¡Adelante, crea!
         </button>
         <a
           class="
@@ -160,17 +159,17 @@
             transition-colors
             duration-200
           "
-          href="/demo"
+          href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P"
           target="_blank"
-          >View demo</a
+          >Ver tutorial</a
         >
       </div>
       <p class="mt-6">
-        Read the
-        <NuxtLink
-          to="/hosting-guide"
+        ¡Ya tengo una tarjeta!
+        
+          <a
           class="
-            cursor-pointer
+          cursor-pointer
             underline
             font-extrabold
             text-emerald-600
@@ -179,54 +178,53 @@
             transition-colors
             duration-200
           "
-          >Hosting Guide</NuxtLink
-        >
+          href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P"
+          target="_blank"
+          >Ver el tutorial</a>
       </p>
     </div>
     <div class="md:grid md:grid-cols-2">
       <div class="px-4 mt-32">
         <div ref="create" id="step-1" class="pt-8">
-          <h2 class="font-extrabold text-2xl">Header attachments</h2>
+          <h2 class="font-extrabold text-2xl">Personaliza el encabezado</h2>
           <div class="stepC">
             <Attachment
               :content="images"
               type="logo"
               :resizeImage="resizeImage"
-              label="Add logo"
-              description="suggested format: svg, png or gif"
+              label="Logotipo"
+              description="Tipo de imagen: .svg, .png o .gif"
               :showAlert="showAlert"
             />
             <Attachment
               :content="images"
               type="cover"
               :resizeImage="resizeImage"
-              label="Add cover photo"
-              description="suggested format: svg, jpeg, png or gif"
+              label="Agregar portada"
+              description="Tipo de imagen: .svg, .jpeg, .png o .gif"
               :showAlert="showAlert"
             />
             <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-              Recommended cover photo size is 960 x 640 pixels, with an aspect
-              ratio of 3:2
+              Se recomienda una foto de portada de 960 x 640 píxeles, con una relación de aspecto de 3:2
             </p>
           </div>
         </div>
         <div id="step-2" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Contact information</h2>
+          <h2 class="font-extrabold text-2xl">Personaliza tu perfil</h2>
           <Attachment
             :content="images"
             type="photo"
             :resizeImage="resizeImage"
-            label="Add profile photo"
-            description="suggested format: jpeg, png or gif"
+            label="Agregar foto de perfil"
+            description="Formato sugerido: .jpeg, .png or .gif"
             :showAlert="showAlert"
           />
           <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-            Recommended profile photo size is 320 x 320 pixels, with an aspect
-            ratio of 1:1
+             Se recomienda una foto de perfil de 320 x 320 píxeles, con una relación de aspecto de 1:1
           </p>
           <div class="stepC mt-6 grid grid-cols-2 gap-4">
             <div>
-              <label for="firstname" class="ml-4">First name</label>
+              <label for="firstname" class="ml-4">Primer nombre</label>
               <input
                 id="firstname"
                 spellcheck="false"
@@ -249,7 +247,7 @@
               />
             </div>
             <div>
-              <label for="lastname" class="ml-4">Last name</label>
+              <label for="lastname" class="ml-4">Apellido</label>
               <input
                 id="lastname"
                 spellcheck="false"
@@ -273,13 +271,13 @@
             </div>
           </div>
           <div class="stepC mt-6">
-            <label for="pronouns" class="ml-4">Gender pronouns</label>
+            <label for="pronouns" class="ml-4">Pronombre de género</label>
             <input
               id="pronouns"
               spellcheck="false"
               type="text"
               v-model="genInfo.pronouns"
-              placeholder="He/Him/His"
+              placeholder="Él/ella"
               autocapitalize="words"
               class="
                 mt-2
@@ -298,7 +296,7 @@
             />
           </div>
           <div class="stepC mt-6">
-            <label for="job-title" class="ml-4">Job title</label>
+            <label for="job-title" class="ml-4">Rol</label>
             <input
               id="job-title"
               type="text"
@@ -321,7 +319,7 @@
             />
           </div>
           <div class="stepC mt-6">
-            <label for="business-name" class="ml-4">Business name</label>
+            <label for="business-name" class="ml-4">Nombre de la empresa</label>
             <input
               id="business-name"
               spellcheck="false"
@@ -344,7 +342,7 @@
             />
           </div>
           <div class="stepC mt-6">
-            <label for="business-address" class="ml-4">Business address</label>
+            <label for="business-address" class="ml-4">Dirección de la empresa</label>
             <textarea
               id="business-address"
               :value="genInfo.addr"
@@ -369,7 +367,7 @@
           </div>
           <div class="stepC mt-6">
             <label for="business-description" class="ml-4"
-              >Business description
+              >Descripción de la empresa
             </label>
             <textarea
               id="business-description"
@@ -395,7 +393,7 @@
           </div>
           <div class="stepC relative mt-6">
             <label for="pgp-public-key" class="flex justify-between ml-4"
-              >OpenPGP public key<span
+              >Clave pública OpenPGP <span
                 v-if="genInfo.key"
                 class="mr-4"
                 :class="pubKeyIsValid ? 'text-emerald-500' : 'text-red-600'"
@@ -423,12 +421,12 @@
               "
               rows="4"
               spellcheck="false"
-              placeholder="Paste public key block here"
+              placeholder="Pegue el bloque de clave pública aquí"
             ></textarea>
           </div>
         </div>
         <div id="step-3" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Primary actions</h2>
+          <h2 class="font-extrabold text-2xl">Acciones esenciales</h2>
           <draggable
             v-model="primaryActions"
             handle=".drag"
@@ -456,7 +454,7 @@
               spellcheck="false"
               type="text"
               v-model="filterPrimary"
-              placeholder="Search an action"
+              placeholder="Buscar una acción"
               class="
                 px-4
                 mb-2
@@ -477,7 +475,7 @@
               "
             />
             <p class="p-3" v-if="filteredPrimaryActions.length < 1">
-              Can't find an action? Please
+              ¿No encuentras una acción? Por favor
               <a
                 href="#help"
                 class="
@@ -490,9 +488,9 @@
                   transition-colors
                   duration-200
                 "
-                >leave your suggestion</a
+                >Deja tu sugerencia</a
               >
-              on Telegram
+              en WhatsApp
             </p>
             <div class="stepC actions">
               <button
@@ -532,7 +530,7 @@
           </div>
         </div>
         <div id="step-4" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Secondary actions</h2>
+          <h2 class="font-extrabold text-2xl">Acciones auxiliares</h2>
           <draggable
             v-model="secondaryActions"
             handle=".drag"
@@ -558,7 +556,7 @@
               spellcheck="false"
               type="text"
               v-model="filterSecondary"
-              placeholder="Search an action"
+              placeholder="Buscar una acción"
               class="
                 px-4
                 mb-2
@@ -579,7 +577,7 @@
               "
             />
             <p class="p-3" v-if="filteredSecondaryActions.length < 1">
-              Can't find an action? Please
+              ¿No encuentras una acción? Por favor
               <a
                 href="#help"
                 class="
@@ -592,9 +590,9 @@
                   transition-colors
                   duration-200
                 "
-                >leave your suggestion</a
+                >Deja tu sugerencia</a
               >
-              on Telegram
+              en WhatsApp
             </p>
             <div class="stepC actions">
               <button
@@ -638,7 +636,7 @@
             :class="{ 'border-t pt-6': secondaryActions.length }" -->
         </div>
         <div id="step-5" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Featured content</h2>
+          <h2 class="font-extrabold text-2xl">Contenido multimedia</h2>
           <div class="stepC">
             <draggable
               v-model="featured"
@@ -679,16 +677,16 @@
                     v-html="require(`~/assets/icons/add.svg?include`)"
                   ></div>
                 </button>
-                <p class="ml-3 leading-none">Add section</p>
+                <p class="ml-3 leading-none">Agregar sección</p>
               </div>
             </div>
             <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-              Supported media formats: jpeg, png, mp3, mp4, webm and pdf
+             Compatibilidad: .jpeg, .png, .mp3, .mp4, .webm y .pdf
             </p>
           </div>
         </div>
         <div id="step-6" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Footer credit</h2>
+          <h2 class="font-extrabold text-2xl">Mostrar Copyright</h2>
           <div class="stepC mt-6">
             <div class="flex items-center">
               <div
@@ -723,7 +721,7 @@
                   <input
                     type="checkbox"
                     name="toggle"
-                    aria-label="Toggle footer credit"
+                    aria-label="Alternar crédito de pie de página"
                     id="toggle"
                     v-model="footerCredit"
                     class="
@@ -749,13 +747,12 @@
               <p>{{ footerCredit ? 'Enabled' : 'Disabled' }}</p>
             </div>
             <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-              By enabling the footer credit, you can help this project reach
-              more people.
+              Al habilitar el crédito de pie de página, puedes ayudar a que este proyecto llegue a más emprendedores.
             </p>
           </div>
         </div>
         <div id="step-7" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Themes</h2>
+          <h2 class="font-extrabold text-2xl">Estilos</h2>
           <div class="stepC mt-3 flex flex-wrap">
             <button
               @click="changeTheme(1)"
@@ -776,7 +773,7 @@
                   : 'bg-gray-700 hover:bg-gray-600 focus:bg-gray-600'
               "
             >
-              A
+              1
             </button>
             <button
               @click="changeTheme(2)"
@@ -797,7 +794,7 @@
                   : 'bg-gray-700 hover:bg-gray-600 focus:bg-gray-600'
               "
             >
-              B
+              2
             </button>
             <button
               @click="changeTheme(3)"
@@ -818,31 +815,31 @@
                   : 'bg-gray-700 hover:bg-gray-600 focus:bg-gray-600'
               "
             >
-              C
+              3
             </button>
           </div>
         </div>
         <div id="step-8" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Colours</h2>
+          <h2 class="font-extrabold text-2xl">Paleta de colores</h2>
           <div class="stepC">
-            <Colour name="logoBg" label="Header background" :colors="colors" />
-            <Colour name="mainBg" label="Main background" :colors="colors" />
+            <Colour name="logoBg" label="Fondo del encabezado" :colors="colors" />
+            <Colour name="mainBg" label="Fondo principal" :colors="colors" />
             <Colour
               name="buttonBg"
-              label="Button background"
+              label="Fondo del botón"
               :colors="colors"
             />
             <Colour
               name="cardBg"
-              label="Featured content background"
+              label="Fondo de contenido multimedia"
               :colors="colors"
             />
           </div>
         </div>
         <div id="step-9" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Fonts</h2>
+          <h2 class="font-extrabold text-2xl">Tipografía</h2>
           <div class="stepC mt-6">
-            <label for="font-link" class="ml-4">Web font embed code</label>
+            <label for="font-link" class="ml-4">Código de inserción de fuente web</label>
             <textarea
               id="font-link"
               v-model="genInfo.fontLink"
@@ -868,7 +865,7 @@
             ></textarea>
           </div>
           <div class="stepC mt-6">
-            <label for="font-css" class="ml-4">Web font CSS rule</label>
+            <label for="font-css" class="ml-4">Regla CSS de fuente web</label>
             <input
               spellcheck="false"
               type="text"
@@ -894,15 +891,13 @@
             />
           </div>
           <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-            Supports services such as Google Fonts, Adobe Typekit, etc. Make
-            sure to get the embed code for both regular and bold font variants
-            from the same font family.
+            Admite servicios como Google Fonts, Adobe Typekit, etc. Asegúrese de obtener el código de inserción para las variantes de fuentes normales y en negrita de la misma familia de fuentes.
           </p>
         </div>
         <div id="step-10" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Analytics</h2>
+          <h2 class="font-extrabold text-2xl">Estadísticas web</h2>
           <div class="stepC mt-6">
-            <label for="tracking-code" class="ml-4">Tracking code</label>
+            <label for="tracking-code" class="ml-4">Código de seguimiento</label>
             <textarea
               id="tracking-code"
               aria-label="tracking-code"
@@ -925,17 +920,17 @@
               "
               rows="4"
               spellcheck="false"
-              placeholder="Paste tracking code here"
+              placeholder="Pegue el código de seguimiento aquí"
             ></textarea>
             <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-              Supports services such as Clicky, Matomo, Google Analytics etc.
+              Admite servicios como Clicky, Matomo, Google Analytics, etc.
             </p>
           </div>
         </div>
         <div id="step-11" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Hosting</h2>
+          <h2 class="font-extrabold text-2xl">La nube</h2>
           <div class="stepC mt-6">
-            <label for="hosted-url" class="ml-4">Hosted card URL</label>
+            <label for="hosted-url" class="ml-4">URL de la tarjeta en la nube</label>
             <input
               spellcheck="false"
               type="text"
@@ -957,12 +952,10 @@
                 resize-none
                 hover:border-gray-600
               "
-              placeholder="https://yoursite/vcard/username"
+              placeholder="https://tusitio/vcard/username"
             />
             <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-              Only paste your hosting URL if you've already decided where you
-              want to host this digital business card. If you haven't decided
-              yet, please skip this step.
+              Solo pega la URL de tu alojamiento si ya has decidido dónde quieres alojar esta tarjeta de presentación digital. Si aún no lo ha decidido, omita este paso.
             </p>
           </div>
         </div>
@@ -990,7 +983,7 @@
         >
           <div id="device" class="bg-black rounded sm:mt-10">
             <h2 class="text-center py-4 font-extrabold text-gray-200">
-              LIVE PREVIEW
+              VISTA PREVIA EN VIVO
             </h2>
             <div id="browserFrame" class="overflow-hidden flex flex-col">
               <div
@@ -1089,15 +1082,15 @@ export default {
       downloadCheckList: [
         {
           label:
-            'I did not attach any link or file that will cause any risk to the user',
+            'No adjunté ningún enlace o archivo que suponga algún riesgo para el usuario.',
           checked: false,
         },
         {
-          label: 'I have verified that all the links are working correctly',
+          label: 'He comprobado que todos los enlaces funcionan correctamente.',
           checked: false,
         },
         {
-          label: 'I have removed all unused fields and sections',
+          label: 'He eliminado todos los campos y secciones no utilizados.',
           checked: false,
         },
       ],
@@ -1726,7 +1719,7 @@ export default {
       },
       featured: [
         {
-          title: 'Section title',
+          title: 'Título de la sección',
           content: [],
         },
       ],

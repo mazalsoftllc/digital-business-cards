@@ -17,17 +17,17 @@ export default {
     ogType: 'website',
     ogImage: '/maskable_512.png',
     // ogUrl: false,
-    ogTitle: 'EnBizCard - An Open-Source Digital Business Card Generator',
+    ogTitle: 'Mazalsoft.xyz',
     ogDescription:
-      'EnBizCard helps you create beautiful, responsive HTML-based digital business cards that can be hosted on your website.',
-    ogSiteName: 'EnBizCard - An Open-Source Digital Business Card Generator',
-    theme_color: '#111827',
-    author: 'Vishnu Raghav',
-    lang: 'en',
-    name: 'EnBizCard - An Open-Source Digital Business Card Generator',
+      'Generador de tarjetas de presentación digitales.',
+    ogSiteName: 'Un servicio de Mazalsoft.xyz - Un generador de tarjetas de presentación digitales de código abierto.',
+    theme_color: '#00003b',
+    author: 'Mazalsoft.xyz',
+    lang: 'es',
+    name: 'Un servicio de Mazalsoft.xyz - Un generador de tarjetas de presentación digitales de código abierto.',
   },
   head: {
-    title: 'EnBizCard - An Open-Source Digital Business Card Generator',
+    title: 'Generador de tarjetas de presentación digitales.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,7 +35,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'EnBizCard helps you create beautiful, responsive HTML-based digital business cards that can be hosted on your website.',
+          'Un servicio de Mazalsoft.xyz - Un generador de tarjetas de presentación digitales de código abierto..',
       },
       {
         hid: 'msapplication-TileColor',
@@ -80,12 +80,12 @@ export default {
     script: [{ src: '/qrcode.min.js' }],
   },
   manifest: {
-    name: 'EnBizCard - An Open-Source Digital Business Card Generator',
+    name: 'Generador de tarjetas de presentación digitales.',
     short_name: 'EnBizCard',
     start_url: '/',
     display: 'standalone',
-    theme_color: '#111827',
-    background_color: '#111827',
+    theme_color: '#00003b',
+    background_color: '#00003b',
     display: 'standalone',
     icons: [
       {

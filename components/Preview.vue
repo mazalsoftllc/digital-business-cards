@@ -17,17 +17,17 @@
           <meta v-if="!PreviewMode" name="robots" content="noindex, nofollow" />
           <meta
             name="author"
-            content="EnBizCard - An Open-Source Digital Business Card Generator"
+            content="Maomobi: Marketing Digital en una sola tarjeta de presentación"
           />
-          <meta name="url" content="https://enbizcard.vishnuraghav.com/" />
-          <meta name="designer" content="Vishnu Raghav" />
+          <meta name="url" content="https://www.mazalsoft.xyz" />
+          <meta name="designer" content="Mauricio Chara Hurtado" />
           <meta
             property="og:title"
-            :content="`${getFullname}'s Digital Business Card`"
+            :content="`${getFullname} - Tarjeta de presentación`"
           />
           <meta
             property="twitter:title"
-            :content="`${getFullname}'s Digital Business Card`"
+            :content="`${getFullname} Tarjeta de presentación`"
           />
           <!-- prettier-ignore -->
           <script>
@@ -35,7 +35,7 @@
           </script>
 
           <link v-if="getCssHref" :href="getCssHref" rel="stylesheet" />
-          <title>{{ getFullname }}'s Digital Business Card</title>
+          <title>{{ getFullname }} Tarjeta de presentación digital</title>
           <style>
             #body{ font-family: sans-serif; } input[type='range']::-moz-range-track { background: none; } input[type='range']::-moz-range-thumb { -moz-appearance: none; width: 1.5rem; height: 1.5rem; border-radius: {{theme === 1? '100%': '0.25rem'}}; border: none; background: {{colors.buttonBg.color}}; z-index: 3; cursor: pointer; } input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; width: 1.5rem; height: 1.5rem; border-radius: {{theme === 1? '100%': '0.25rem'}}; border: none; background: {{colors.buttonBg.color}}; z-index: 3; cursor: pointer; } .closeColor{ {{hasLightBG('mainBg') ? 'filter:invert(1) ':''}} } .topAction { {{ hasLightBG('logoBg') ? 'filter:invert(1) ':''}}} .iconColor{ color:#eee; {{hasLightBG('buttonBg') ? 'filter:invert(1)' : null}} } .cardColor{ {{hasLightBG('cardBg') && 'color:#222 !important'}} } .textColor{ {{hasLightBG('mainBg') ? 'color:#222 !important' : 'color:#eee !important'}} } .seekbarColor{  {{`background:${colors.buttonBg.color}80 !important`}} }
           </style>
@@ -62,7 +62,7 @@
             </a>
             <div id="keyView">
               <p class="textColor">
-                Use my public key to send me encrypted messages
+                Usa mi clave pública para enviarme mensajes cifrados
               </p>
               <a
                 :href="!PreviewMode && `./${getFullname}'s public key.asc`"
@@ -80,12 +80,12 @@
                   class="icon iconColor"
                   v-html="require(`~/assets/icons/download.svg?include`)"
                 ></div>
-                <span class="iconColor">Download Key</span>
+                <span class="iconColor">Descargar clave</span>
               </a>
             </div>
             <div id="copyView" ref="copyView">
               <p class="textColor">
-                Copy and send the URL to share my Business Card
+                Compartir mi tarjeta de presentación digital
               </p>
               <button
                 id="copyURL"
@@ -97,13 +97,13 @@
                   class="icon iconColor"
                   v-html="require(`~/assets/icons/copy.svg?include`)"
                 ></div>
-                <span class="iconColor">Copy URL</span>
+                <span class="iconColor">Copiar URL</span>
               </button>
             </div>
             <div id="qrView" ref="qrView" class="textColor">
               <div id="qr"></div>
-              <h3>Scan the QR Code</h3>
-              <p>to view my Business Card on another device</p>
+              <h3>Escanea el código QR</h3>
+              <p>para ver mi Tarjeta de Presentación en otro dispositivo</p>
             </div>
           </div>
           <header>
@@ -203,13 +203,13 @@
               target="_blank"
               :style="{ backgroundColor: `${colors.buttonBg.color}` }"
               @click.prevent="downloadVcard"
-              aria-label="Save Contact"
+              aria-label="Guardar contacto"
             >
               <div
                 class="icon iconColor"
                 v-html="require(`~/assets/icons/add-user.svg?include`)"
               ></div>
-              <p class="iconColor">Save Contact</p>
+              <p class="iconColor">Guardar contacto</p>
             </a>
             <div class="actions">
               <div
@@ -284,7 +284,7 @@
                           ? item.dataURI
                           : `./media/${getTitle(item.title)}.${item.ext}`
                       "
-                      alt="Product image"
+                      alt=" Product image"
                     />
                     <div class="controls cardColor">
                       <p class="title">
@@ -341,13 +341,13 @@
             :style="{ backgroundColor: `${colors.mainBg.color}` }"
             class="textColor"
           >
-            Created with
+            Creado con 
             <a
               class="textColor"
-              href="https://enbizcard.vishnuraghav.com/"
+              href="https:/mazalsoft.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              >EnBizCard</a
+              >Mazalsoft.xyz</a
             >
           </footer>
         </body>
@@ -478,7 +478,7 @@ export default {
     },
     sharingAlert() {
       this.showAlert(
-        'You are able to share your business card after completing the hosting process.\n\nCheck out the <a class="underline font-extrabold text-emerald-600 hover:text-emerald-500 transition-colors duration-200" href="/demo" target="_blank">demo</a> to test the functionality.'
+        'Puede compartir su tarjeta de presentación después de completar el proceso de hospedaje.\n\nConsulte la <a class="underline font-extrabold text-emerald-600 hover:text-emerald-500 transition-colors duration-200" href="https://www.maomobi.com" target="_blank">demo</a> para probar la funcionalidad.'
       )
     },
     togglePlay(ref) {

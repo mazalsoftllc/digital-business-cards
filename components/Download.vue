@@ -1,8 +1,8 @@
 <template>
   <div id="downloadSection" class="mt-16">
-    <h2 class="font-extrabold text-2xl">Download</h2>
+    <h2 class="font-extrabold text-2xl">Descargar</h2>
     <div class="stepC mt-6">
-      <p>Please complete the checklist to proceed,</p>
+      <p>Acepte los términos antes de descargar.</p>
       <Check
         v-for="(item, index) in downloadCheckList"
         :downloadCheckList="downloadCheckList"
@@ -17,7 +17,7 @@
         :title="
           downloadChecked
             ? ''
-            : 'Complete the checklist to download the package'
+            : 'Complete la lista de verificación para descargar la tarjeta empaquetada.'
         "
         :class="
           downloadChecked
@@ -25,25 +25,26 @@
             : 'cursor-not-allowed text-black'
         "
       >
-        Download as ZIP
+      Guardar la tarjeta digital en su edición web
       </button>
       <p class="mt-6 border p-4 rounded border-gray-700 text-gray-400">
-        Extract the downloaded ZIP file and follow the
-        <NuxtLink
-          to="/hosting-guide"
+        Extraiga el archivo ZIP descargado y siga el
+        <a
           class="cursor-pointer underline font-extrabold text-emerald-600 hover:text-emerald-500 focus:text-emerald-500 transition-colors duration-200"
-          >Hosting&nbsp;Guide</NuxtLink
-        >
-        to get your digital business card online.
+          href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P"
+          rel="noreferrer"
+          target="_blank"
+          >Videotutorial para colocar en el hosting</a
+        >        
+        la tarjeta de presentación digital.
         <br /><br />
-        If you find this service valuable to you or your business, please
-        consider donating.
+        Si desea respaldar este servicio, compre una solución de hosting con nosotros.
         <br /><a
           class="inline-block font-extrabold tracking-wide leading-none shrink-0 p-3 text-white bg-gray-700 rounded hover:bg-gray-600 focus:bg-gray-600 transition-colors duration-200 mt-4"
           href="https://www.vishnuraghav.com/donate/"
           rel="noreferrer"
           target="_blank"
-          >Donate</a
+          >Adquirir un plan hosting básico</a
         >
       </p>
     </div>

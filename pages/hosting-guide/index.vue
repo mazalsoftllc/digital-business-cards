@@ -6,14 +6,14 @@
           <div
             class="logo w-24"
             v-html="require(`~/assets/icons/logo.svg?include`)"
-            title="EnBizCard - An Open-Source Digital Business Card Generator"
+            title="Mazalsoft.xyz - Tarjetas de presentación digital"
           ></div
         ></NuxtLink>
         <a
           class="font-extrabold tracking-wide leading-none shrink-0 p-3 border-2 text-white border-gray-700 rounded hover:bg-gray-700 focus:bg-gray-700 transition-colors duration-200"
-          href="https://www.vishnuraghav.com/donate"
+          href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P"
           target="_blank"
-          >Donate</a
+          >Videotutorial en español</a
         >
       </div>
       <div id="guide" class="max-w-screen-sm">
@@ -80,7 +80,7 @@
               <NuxtLink
                 to="/"
                 class="underline font-extrabold text-emerald-600 hover:text-emerald-500 focus:text-emerald-500 transition-colors duration-200"
-                >EnBizCard</NuxtLink
+                >EnBizCd</NuxtLink
               >.
             </li>
             <li>
