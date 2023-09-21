@@ -1,10 +1,10 @@
-<p align="center"><a href="https://enbizcard.vercel.app/"><img src="assets/images/GitHub.png" width="100%"></a></p>
+<p align="center"><a href="https://mazalsoft.xyz/"><img src="assets/images/GitHub.png" width="100%"></a></p>
 
-<h1 align="center">An Open-Source Digital Business Card Generator</h1>
+<h1 align="center">Un generador de tarjetas de presentación digitales de código abierto</h1>
 <!-- <h3 align="center">Your Website Can Host Your Digital Business Cards for FREE!</h3> -->
-<h3 align="center">Why Pay When Your Digital Business Cards Can Be Hosted on Your Website for Free!</h3>
-<p align="center">EnBizCard helps you create interactive and responsive HTML-based digital business cards that can be hosted with your website.</p>
-<h3 align="center"><a href="https://enbizcard.vercel.app">Open App</a> | <a href="https://enbizcard.vercel.app">View demo</a></h3>
+<h3 align="center"¡Crea tu tarjeta de presentación digital en minutos y descárgala gratis!</h3>
+<p align="center">Transforma tu presentación profesional con hermosas tarjetas digitales.</p>
+<h3 align="center"><a href="https://mazalsoft.xyz">Abrir App</a> | <a href="https://maomobi.com">Ver un demo</a></h3>
 
 ---
 
@@ -13,47 +13,48 @@
 
 ---
 
-## Goals
+## Objetivos
 
-- Minimize the cost of paying third-party services to host your digital business cards
-- Elegant design and functionality
-- Quick and easy setup
+- Minimice el costo de pagar servicios de terceros para alojar sus tarjetas de presentación      digitales.
+- Diseño elegante y funcionalidad.
+- Configuración rápida y sencilla.
 
-## Features
+## Caracteristicas
 
-- Concise action buttons
-- Click to contact via Phone, WhatsApp, Email, etc
-- Direct vCard download (lets user download your contact information to their phone)
-- Social media links
-- PGP public key sharing
-- Share your card with anyone using QR-code or link
-- Showcase images, artworks, music, videos, poems, brochures, products, services or anything up to your imagination
-- Embed any kind of HTML content (videos, music, maps, contact forms, you name it.)
-- Themes
-- Track your audience with analytics
-- Custom fonts
+- Botones de acción concisos.
+- Haga clic para contactar por teléfono, WhatsApp, correo electrónico, etc.
+- Descarga directa de vCard (permite al usuario descargar su información de contacto a su teléfono).
+- Enlaces de redes sociales.
+- Compartir clave pública PGP.
+- Comparta su tarjeta con cualquier persona mediante un código QR o un enlace
+- Muestre imágenes, obras de arte, música, videos, poemas, folletos, productos, servicios o cualquier cosa que se ajuste a su imaginación.
+- Incruste cualquier tipo de contenido HTML (vídeos, música, mapas, formularios de contacto, lo que sea).
+- Temas.
+- Realice un seguimiento de su audiencia con análisis.
+- Fuentes personalizadas.
 
-## Highlights
+## Destacado
 
-- Zero limitations
-- Your data belongs to you
-- Private by design
+- Cero limitaciones.
+- Tus datos te pertenecen.
+- Privado por diseño.
 
-## Future
+## Fuente documental original
 
-Check out the [roadmap](https://github.com/vishnuraghavb/EnBizCard/projects/1) to see the upcoming features of Digital Business Card Generator.
+Visite: [roadmap](https://github.com/vishnuraghavb/EnBizCard/projects/1) 
+Funciones del Generador de tarjetas de presentación digitales.
 
-Your feedback and suggestions are very important. If you have an idea to improve Digital Business Card Generator, [do let me know](#having-issues-suggestions-and-feedback). I'm always open to ideas ;)
+Sus comentarios y sugerencias son muy importantes. Si tiene una idea para mejorar el Generador de tarjetas de presentación digitales, [hágamelo saber] (#tener-problemas-sugerencias-y-comentarios). Siempre estoy abierto a ideas ;)
 
 ## Having issues, suggestions and feedback?
 
-You can,
+Repositorio original.
 
 - [Create an issue here](https://github.com/vishnuraghavb/EnBizCard/issues)
 - [Join the Telegram group](http://t.me/enbizcard) (quicker replies and best for discussion)
 - Contact me at apps@vishnuraghav.com
 
-## Assets
+## Activos
 
 - [Boxicons](https://boxicons.com/)
 - [Feather icons](https://feathericons.com)
@@ -62,22 +63,22 @@ You can,
 
 ## Self-Hosting Guide - Docker
 
-In order to quickly host the EnBizCard Generator on a machine running Docker and Docker Compose, follow these steps:
+Para alojar rápidamente el generador de tarjetas de presentación digital en una máquina que ejecuta Docker y Docker Compose, siga estos pasos:
 
-1. Clone the repository to your machine and `cd` into the directory.
+1. Clona el repositorio en tu máquina y `cd` en el directorio.
 
 ```
-git clone git@github.com:vishnuraghavb/EnBizCard.git
+git clone https://github.com/mazalsoftllc/digital-business-cards.git
 ```
 
-2. Create a .env file by copying and adjusting env.example:
+2. Cree un archivo .env copiando y ajustando env.example:
 
 ```
 cp env.example .env
 ```
 
 3. Run `docker-compose up -d`
-4. Access the app at http://localhost:22212 (or a different port, in case you edited the .env file).
+4. Acceda a la aplicación en http://localhost:22212 (o a un puerto diferente, en caso de que haya editado el archivo .env).
 
 ## License
 
@@ -100,6 +101,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ```
 
-## Support me
+## Soporte del Mazalsoft.xyz en español
+<a href="https://www.youtube.com/playlist?list=PLsFzOs6X4MmrdXNgpyjDXMsttkb1OkY6P">Videotutorial para crear tarjetas de presentación digital</a>
+<a href="https://www.mazalsoft.xyz">Visitar Mazalsoft.xyz</a>
+
+## Soporte del fabricante original en inglés
 
 <a href="https://www.vishnuraghav.com/donate/"><img alt="Donate to Vishnu Raghav" src="assets/images/donate.svg" width="207"></a>
