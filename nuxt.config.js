@@ -215,6 +215,12 @@ export default {
    */
   build: {
     extend(config) {
+
+
+      // Increase Babel's maximum size limit to a high value
+      config.performance = config.performance || {};
+      config.performance.maxAssetSize = 10 * 1024 * 1024; // 10MB (change this value according to your needs)
+
       config.module.rules.push({
         test: /\.min.css|\.min.js$/,
         use: [
